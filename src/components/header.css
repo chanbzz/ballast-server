@@ -1,57 +1,14 @@
-* {
-    margin: 0;
-}
-
-li {
-    list-style-type: none;
-    display: inline;
-    
-}
-
-button {
-    width: 150px;
-    height: 50px;
-    background-color: #320d52;
-    color: white;
-    display: inline;
-    font-weight: bold;
-    font-family: 'Secular One';
-    
-    border-width: 2px;
-    border-color: powderblue;
-    
-
-}
-
-img {
-    height: 300px;
-    width: 300px;
-    display: block;
-    margin-top: 5%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10%;
-    box-shadow: 0 0 16px;
-
-
-}
-
-button:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-
-.divider {
-    width: 75px;
-    height: auto;
-    display: inline-block;
-}
-
-#container {
+#top-banner {
+    margin-top: 20px;
     text-align: center;
+    color: black;
+    text-decoration: none;
+    font-size: 35px;
     
-    
-
 }
 
+a {
+    color:black;
+}
 
 

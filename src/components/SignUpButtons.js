@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import './header.css';
+import './signup.css';
 import pic from '../images/ballastpic.png';
 import { connect } from 'react-redux';
-import Dashboard from './Dashboard.js'
+import Dashboard from './Dashboard.js';
+import Footer from './Footer.js';
 
 
 
@@ -26,7 +27,7 @@ class SignUpButtons extends Component {
                 return (
                 <div id="container">
                 <img id='logo' alt='logo' src={pic}/>
-                <ul>
+                <ul id='login-buttons'>
                 <li><a href="/auth/google"><button>Sign In</button></a></li>
                 <div className='divider' />
                 <li><a href="/auth/google"><button>Sign Up</button></a></li>
@@ -38,7 +39,6 @@ class SignUpButtons extends Component {
                 return (
                 <div>
                     <Dashboard />
-                    <li><a href="/api/logout"><button>Logout</button></a></li> 
                 </div>
                 ) 
         }

@@ -1,14 +1,15 @@
-import React, { Component } from 'react';
+import React, { Component, useState, useEffect } from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 import { connect } from 'react-redux';
 import * as actions from '../actions';
 
 
+
 import SignUpButtons from './SignUpButtons';
 
 
-const Dashboard = () => <h2>Dashboard</h2>
-const QuestionNew = () => <h2>Questions</h2>
+const Dashboard = () => <h2></h2>
+const QuestionNew = () => <h2></h2>
 const Landing = () => <h2></h2>
 
 class App extends Component {
@@ -23,6 +24,7 @@ class App extends Component {
                     <div>
                         
                         <SignUpButtons />
+                        
                         <Route exact path="/" component={Landing} />
                         <Route exact path="/dashboard" component={Dashboard} />
                         <Route exact path="/dashboard/questions" component={QuestionNew} />

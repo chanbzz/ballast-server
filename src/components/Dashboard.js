@@ -1,17 +1,27 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import React, { Link, Component, useEffect, useState } from 'react';
+import dashboard from './dashboard.css'
+import Header from './Header';
+import Footer from './Footer';
+import Navbar from './Nav';
 
-class Dashboard extends React.Component {
-    render() {
+
+
+function Dashboard() {
 
         return (
+
             <div>
-                <h1>Hello chan.</h1>
-                <button>Take a Test</button>
+                <Header />
+                <Navbar />
+                    <div className="kreep">
+                        <a id='center-button' href='https://ballast-html.herokuapp.com/'><button>Generate a Question</button></a>
+                    </div>
+                <Footer />
             </div>
+            
+            
         )
 
-}
 }
 
 export default Dashboard;
