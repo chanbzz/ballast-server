@@ -38,7 +38,7 @@ class SignUpButtons extends Component {
             default: 
                 return (
                 <div>
-                    <Dashboard />
+                    {/* <Dashboard /> */}
                 </div>
                 ) 
         }

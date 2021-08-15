@@ -8,7 +8,7 @@ import SignUpButtons from './SignUpButtons';
 
 
 const Dash = () => <div><Dashboard /></div>
-const QuestionNew = () => <div><Question /></div>
+const QuestionNew = () => <Question />
 const Landing = () => <h2></h2>
 
 
