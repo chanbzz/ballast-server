@@ -1,0 +1,66 @@
+html, body {padding:0; margin:0; height: 100%;}
+
+body {
+    background-color: pink;
+}
+
+#title {
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+#ready-to-solve {
+    height: 200px;
+    width: 200px;
+    font-size: 20px;
+
+}
+
+button {
+    margin-bottom: 30vh;
+    width: 200px;
+    height: 200px;
+    margin-top: -100px;
+    margin-left: 90px;
+    border-radius: 50%;
+    background-color: #060b26;
+    opacity: 90%;
+    color: white;
+    font-size: 28px;
+    font-family: 'Arial';
+    border-width: 2px;
+    border-color: powderblue;
+    align-content: center
+}
+
+.emphasize-user {
+    font-style: italic;
+}
+
+
+div.kreep {
+    
+    margin-left: auto;
+    margin-right: 57%;
+    margin-top: 27%;
+    width: 8em
+}
+
+#logout {
+    text-decoration: none;
+    font-size: 20px;
+    float: right;
+    float: top;
+    margin-right: 20px
+    
+}
+
+
+
+
+
+
+
+
+
+
