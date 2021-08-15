@@ -12,10 +12,14 @@ function Dashboard() {
 
             <div>
                 <Header />
+                <a id='logout' href="/api/logout">Logout</a>
                 <Navbar />
                     <div className="kreep">
+                    
                         <a id='center-button' href='https://ballast-html.herokuapp.com/'><button>Generate a Question</button></a>
+                        
                     </div>
+                    
                 <Footer />
             </div>
             

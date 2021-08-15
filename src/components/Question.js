@@ -4,25 +4,35 @@ import './dashboard.css';
 
 
 
+
 const  Question = () => {
         
-    
-        const [questions, setQuestions] = useState([]);
+        const [title, setTitle] = useState("Title")
+        const [question, setQuestions] = useState("Question");
 
         
 
-        useEffect(()=> {
-            axios.get(`http://localhost:9000/api/questions`)
+        
+        axios.get(`/api/questions`)
                 .then((response) => {
-                console.log(response)
-
-                })
-            })
+                    let arrayQuestions = response.data;
+                    arrayQuestions.forEach((item) => {
+                        setTitle(item.Title)      
+                        setQuestions(item.Content)
+                    });
+                    
+                }, [])
         
 
 
     return (
-        <h1>Hi</h1>
+        <>
+        <p id="title">{title}</p>
+        <p>{question}</p>
+        <button id='ready-to-solve'>I'm ready to solve this problem!</button>
+        <button id='i-need-help'>I need more help</button>
+        </>
+        
     )
 
 }

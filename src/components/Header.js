@@ -1,12 +1,27 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './header.css';
+import { Link } from 'react-router-dom';
+import axios from 'axios';
+import Question from './Question'
+
 
 export const Header = () => {
+
+    let [user, setUser] = useState("compadre")
+    axios.get('/api/current_user')
+
+        .then((response) => {
+            console.log(response.data.googleId)
+            setUser(response.data.googleId)
+
+        });
+
+
     return (
         <div>
             <header id='top-banner'>
-                <h1>Hello chan.</h1>
-                <a href="/api/logout">Logout</a>   
+                <h1>Ballast. </h1>
+                <p id='greeting'>Hello <div class='emphasize-user'>{user}!</div></p>  
             </header>
             
         </div>

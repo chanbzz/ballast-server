@@ -2,6 +2,7 @@ import React from 'react';
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
 import * as IoIcons from 'react-icons/io';
+import Logout from './Logout';
 
 
 export const SidebarData = [
@@ -37,14 +38,14 @@ export const SidebarData = [
   },
   {
     title: 'Support',
-    path: '/support',
+    path: 'www.google.com',
     icon: <IoIcons.IoMdHelpCircle />,
     cName: 'nav-text'
   },
 
   {
     title: "Sign Out",
-    path: '/api/logout',
+    path: 'api/logout',
     icon: <IoIcons.IoMdHelpCircle />,
     cName: 'nav-text',
   }

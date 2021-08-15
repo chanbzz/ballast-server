@@ -1,45 +1,59 @@
-html, body {padding:0; margin:0; height:100%;}
-footer{position: absolute; bottom: 0; left: 0; right: 0;}
+html, body {padding:0; margin:0; height: 100%;}
 
 body {
     background-color: pink;
 }
 
+#title {
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+#ready-to-solve {
+    height: 200px;
+    width: 200px;
+    font-size: 20px;
+
+}
+
 button {
-    margin-bottom: 20%;
-    width: 300px;
-    height: 300px;
+    margin-bottom: 30vh;
+    width: 200px;
+    height: 200px;
+    margin-top: -100px;
+    margin-left: 90px;
     border-radius: 50%;
-    background-color: #320d52;
+    background-color: #060b26;
     opacity: 90%;
     color: white;
     font-size: 28px;
     font-family: 'Arial';
     border-width: 2px;
     border-color: powderblue;
-    position:fixed;
-
-    
+    align-content: center
 }
 
-@keyframes kreep {
-    0% {-webkit-transform: scale(1.1,.9);
-        transform: scale(1.1,.9);}
-   70% { -webkit-transform: scale(.9,1.1) translateY(-.5rem)}
-   70% { -webkit-transform: scale(1);
-         transform: scale(1);}
+.emphasize-user {
+    font-style: italic;
 }
+
 
 div.kreep {
-  /*name-duration-function(ease,eas-in,linear)-delay-count-direction */
-    animation: kreep 0.8s ease 2s infinite alternate;
+    
     margin-left: auto;
-    margin-right: 54%;
-    margin-top: 20%;
+    margin-right: 57%;
+    margin-top: 27%;
     width: 8em
 }
 
-
+#logout {
+    text-decoration: none;
+    font-size: 20px;
+    float: right;
+    float: top;
+    margin-right: 20px
+    
+}
 
 
 
