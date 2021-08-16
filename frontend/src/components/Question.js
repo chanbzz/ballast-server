@@ -28,9 +28,11 @@ const  Question = () => {
     return (
         <>
         <p id="title">{title}</p>
-        <p>{question}</p>
+        <p id="question">{question}</p>
+        <div id="button">
         <button id='ready-to-solve'>I'm ready to solve this problem!</button>
-        <button id='i-need-help'>I need more help</button>
+        <a href="/questions-page/help"><button id='i-need-help'>I need more help</button></a>
+        </div>
         </>
         
     )

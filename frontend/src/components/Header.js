@@ -5,7 +5,7 @@ import axios from 'axios';
 import Question from './Question'
 
 
-export const Header = () => {
+export const Header = (props) => {
 
     let [user, setUser] = useState("compadre")
     axios.get('/api/current_user')

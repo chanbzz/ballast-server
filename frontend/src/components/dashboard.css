@@ -6,13 +6,30 @@ body {
 
 #title {
     margin-top: 50px;
+    font-size: 100px;
     font-weight: bold;
+    text-align: center;
+
+}
+
+#button {
+    margin-top: -200px;
+    margin-left: 400px;
+
+}
+
+#question {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 30px;
 }
 
 #ready-to-solve {
     height: 200px;
     width: 200px;
     font-size: 20px;
+    margin-top: 300px;
+    align-content: center;
 
 }
 

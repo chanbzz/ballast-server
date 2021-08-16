@@ -16,7 +16,7 @@ function Dashboard() {
                 <Navbar />
                     <div className="kreep">
                     
-                        <a id='center-button' href='https://ballast-html.herokuapp.com/'><button>Generate a Question</button></a>
+                        <a id='center-button' href='/questions-page/'><button>Generate a Question</button></a>
                         
                     </div>
                     
