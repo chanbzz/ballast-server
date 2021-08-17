@@ -1,3 +1,7 @@
+*{
+    font-family: 'Share Tech Mono', monospace;
+}
+
 html, body {padding:0; margin:0; height: 100%;}
 
 body {
@@ -31,7 +35,8 @@ div.kreep {
     margin-left: auto;
     margin-right: 57%;
     margin-top: 290px;
-    width: 8em
+    width: 8em;
+    margin-bottom: 10px;
 }
 
 #logout {

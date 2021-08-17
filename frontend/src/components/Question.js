@@ -39,7 +39,7 @@ const  Question = () => {
                     <img id='car' alt='car' src={car}/>
                 </div>
                     <div id='question-buttons'>
-                        <a href="/questions-page/test"><button id='ready-to-solve'>I'm ready to solve this problem!</button></a>
+                        <a href="/questions-page/test"><button id='ready-to-solve'>Take me to ballast playground</button></a>
                         <a href="/questions-page/help"><button id='i-need-help'>I need more help</button></a>
                         
                     </div>

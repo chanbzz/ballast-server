@@ -1,3 +1,7 @@
+*{
+    font-family: 'Share Tech Mono', monospace;
+}
+
 #top-banner {
     margin-top: 0px;
     text-align: center;
@@ -16,7 +20,7 @@
 #greeting {
     color:black;
     margin-top: 100px;
-    margin-left: 220px;
+    margin-left: 110px;
     text-align: left;
     font-weight: 300px;
     font-size: 30px;
