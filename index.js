@@ -44,7 +44,7 @@ require('./routes/authRoutes')(app);
 
 if (process.env.NODE_ENV === "production") {
   //express will serve up production assets 
-  app.use(express.static(client/build));
+  app.use(express.static('client/build'));
 
   // express will serve up the html file if it doesn't recognize the route
 
