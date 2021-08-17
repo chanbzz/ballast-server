@@ -30,7 +30,7 @@ class App extends Component {
                         
                         <SignUpButtons />
                         
-                        <Route exact={true} path="/" component={Landing} />
+                        <Route path="/" component={Landing} />
                         <Route exact={true} path="/dashboard" component={Dash} />
                         <Route exact={true} path="/questions-page"
                         component={QuestionNew} />

@@ -42,18 +42,18 @@ app.use(express.json());
 
 require('./routes/authRoutes')(app);
 
-// if (process.env.NODE_ENV === "production") {
-//   //express will serve up production assets 
-//   app.use(express.static('client/build'));
+if (process.env.NODE_ENV === "production") {
+  //express will serve up production assets 
+  app.use(express.static('frontend/build'));
 
-//   // express will serve up the html file if it doesn't recognize the route
+  // express will serve up the html file if it doesn't recognize the route
 
-//   const path = require('path');
-//   app.get("*", (req, res) => {
-//     res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
-//   });
+  const path = require('path');
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "frontend", "build", "index.html"));
+  });
 
-// }
+}
 
 const PORT = process.env.PORT || 9000;
 app.listen(PORT);
