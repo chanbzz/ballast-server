@@ -1,18 +1,15 @@
 import React from 'react';
 import hmm from '../images/hmm.png';
 import './questionHelp.css';
-import Header from './Header'
-
-
-
-
-
-
+import Header from './Header';
+import Footer from './Footer';
 
 const QuestionHelp = () => {
     return (
         <div>
-            <Header />
+            <header id='top-banner'>
+                <h1>Ballast. </h1>
+            </header>
             <img id='hmm' alt="thinking-picture" src={hmm}></img>
 
             <div id="help-buttons">
@@ -30,23 +27,24 @@ const QuestionHelp = () => {
             </a>
                 
             
-                <a href="https://afteracademy.com/blog/what-is-the-two-pointer-technique"><button id="two-pointer-method">Whats the two pointer method?
+                <a href="https://afteracademy.com/blog/what-is-the-two-pointer-technique" target="_blank"><button id="two-pointer-method">Whats the two pointer method?
             </button></a>
             <div id="button-row-up"> 
-                <button>
+                <a href="/questions-page/help/videos"><button>
                     Watch some vidz
-                </button>
+                </button></a>
                 <button>
                     Step through some code!
                 </button>
-                <button>
+                <a href="/questions-page/test"><button>
                     I think I'm ready now!
-                </button>
+                </button></a>
                 <button>
                     I still need help!
                 </button>
             </div>  
             </div>
+            <a id='logout' href="/api/logout">Logout</a>
         </div>
     )
 }

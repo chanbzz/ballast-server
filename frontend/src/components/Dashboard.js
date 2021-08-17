@@ -19,8 +19,7 @@ function Dashboard() {
                         <a id='center-button' href='/questions-page/'><button>Generate a Question</button></a>
                         
                     </div>
-                    
-                <Footer />
+                    <Footer />
             </div>
             
             

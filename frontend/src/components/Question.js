@@ -1,6 +1,9 @@
 import React, { Link, Component, useEffect, useState } from 'react';
 import axios from 'axios';
-import './dashboard.css';
+import './questions.css';
+import car from '../images/car.png';
+import Footer from './Footer';
+import Logout from './Logout';
 
 
 
@@ -26,13 +29,26 @@ const  Question = () => {
 
 
     return (
-        <>
-        <p id="title">{title}</p>
-        <p id="question">{question}</p>
-        <div id="button">
-        <button id='ready-to-solve'>I'm ready to solve this problem!</button>
-        <a href="/questions-page/help"><button id='i-need-help'>I need more help</button></a>
-        </div>
+        <>  
+            <Logout />
+            <div class="question-container">
+                <p id="question-title">{title}</p>
+
+                <p id="question">{question}</p>
+                <div class="question-child-image">
+                    <img id='car' alt='car' src={car}/>
+                </div>
+                    <div id='question-buttons'>
+                        <a href="/questions-page/test"><button id='ready-to-solve'>I'm ready to solve this problem!</button></a>
+                        <a href="/questions-page/help"><button id='i-need-help'>I need more help</button></a>
+                        
+                    </div>
+                    <Footer id='questions-footer' />
+                    
+            </div>
+
+            
+        
         </>
         
     )

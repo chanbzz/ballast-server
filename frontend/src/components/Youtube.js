@@ -1,34 +1,15 @@
-import React, { useState } from 'react';
+import React from "react";
+import PropTypes from "prop-types";
 
-import axios from 'axios';
+const Youtube = ({ embedId }) => (
+  <div className="video-responsive">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/0tn0-DSdHdA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+);
 
-
-// const API_KEY = 'AIzaSyAx5eJh8ysCzL0hJ9MW6Swt-dIU6UYEH9U';
-
-// CONST NEW_KEY = 'AIzaSyCYmgrnMu9OD3WscAJBcJ09rwekkFhyaDg'
-
-// const CHANNEL = 'PLAseks2pbTKYh94GdV3i4WWL37x8B-iSo';
-
-const RESULT = 50;
-
-
-const isPalindromeVids = `https://www.googleapis.com/youtube/v3/search?key=AIzaSyCYmgrnMu9OD3WscAJBcJ09rwekkFhyaDg&list=PLAseks2pbTKYh94GdV3i4WWL37x8B-iSo&part=snippet,id&order=date&maxResults=3`
-
-
-const Youtube = () => {
-
-    const [vids, setVids] = useState('some vids')
-
-    axios.get(isPalindromeVids)
-        .then ((response) => {
-            console.log(response)
-        });
-
-    return (
-        <div>
-            
-        </div>
-    )
-}
+Youtube.propTypes = {
+  embedId: PropTypes.string.isRequired
+};
 
 export default Youtube;
+

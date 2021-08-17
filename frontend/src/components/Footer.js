@@ -3,7 +3,7 @@ import './footer.css'
 export const Footer = () => {
     return (
         <footer>
-            <ul id='footer-container'>
+            <ul className='footer-container'>
                 <li>
                     <p id='www'>
                         web witch worldwide

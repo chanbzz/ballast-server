@@ -1,0 +1,51 @@
+.question-container {
+    text-align: center;
+}
+
+
+.question-child-image {
+    display: flex;
+    
+}
+
+#question-title{
+    font-size: 75px;
+    font-weight: bold;
+    margin-top: 5%;
+}
+
+#question {
+    margin-top: 5%;
+    font-size: 35px;
+}
+
+#car {
+    height: 100px;
+    width: 200px;
+    margin-left: 40%;
+    margin-top: 5%;
+
+}
+
+#question-logout {
+    margin-right: 100%;
+
+}
+
+
+#question-buttons {
+    margin-top: 10%;
+    margin-left: -12%;
+    display: inline-flex;
+}
+
+#ready-to-solve{
+    margin-top: 2%;
+    margin-bottom: -1%
+}
+
+#i-need-help {
+    margin-top: 2%;
+}
+
+

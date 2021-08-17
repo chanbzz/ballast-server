@@ -3,7 +3,7 @@ import React from 'react'
 const Logout = () => {
     return (
         <div>
-            <a id='logout' onClick="href='/api/logout'">Logout</a>
+            <a id='logout' href='/api/logout'>Logout</a>
         </div>
     )
 }
