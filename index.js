@@ -8,7 +8,7 @@ require('./models/User');
 // require('./models/Questions');
 require('./services/passport');
 const cors = require('cors')
-const question_routes = require("./routes/Questions")
+const question_routes = require("./routes/questions")
 
 const app = express();
 
