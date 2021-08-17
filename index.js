@@ -2,7 +2,8 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cookieSession = require('cookie-session');
 const passport = require('passport');
-const keys = require('./config/keys');
+// const keys = require('./config/keys');
+require('dotenv').config()
 require('./models/User');
 // require('./models/Questions');
 require('./services/passport');
@@ -11,7 +12,7 @@ const question_routes = require("./routes/Questions")
 
 const app = express();
 
-mongoose.connect(keys.mongoURI, {
+mongoose.connect(process.env.MONGO_URI, {
     useNewUrlParser: true,
     useCreateIndex: true,
     useUnifiedTopology: true,
@@ -30,7 +31,7 @@ db.on('connected', function() {
 app.use(
   cookieSession({
     maxAge: 30 * 24 * 60 * 60 * 1000,
-    keys: [keys.cookieKey]
+    keys: [process.env.COOKIE_KEY]
   })
 );
 app.use(passport.initialize());
