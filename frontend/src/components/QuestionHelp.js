@@ -32,10 +32,10 @@ const QuestionHelp = () => {
                     
                 
                     <a href="https://afteracademy.com/blog/what-is-the-two-pointer-technique" target="_blank"><button class="box">Whats the two pointer method?
-                </button></a>
-                    <button class="box">
+                </button></a >
+                    <a href="https://is-palindrome-visualization.herokuapp.com/" target="_blank"><button class="box">
                         Step through some code!
-                    </button>
+                    </button></a>
                     <a href="/questions-page/test"><button class="box">
                         I think I'm ready now!
                     </button></a>
